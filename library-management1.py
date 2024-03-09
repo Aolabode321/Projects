@@ -48,11 +48,12 @@ print('table created!')
 # create a menu
 menu = input('''
 Welcome to the Library Database! Please make a selection below!
-      a - add a new book to database
-      d - delete book from database       
-      e - edit book in the database 
-      i - view inventory
-      b - check books being borrowed
+      1 - add a new book to database
+      2 - check books being borrowed
+      3 - edit book in the database
+      4 - delete book from database       
+      5 - view inventory
+      
       q - quit
 ''')
 
@@ -117,11 +118,11 @@ def delete_book():
 
 
 
-if menu == 'a':
+if menu == '1':
     insert_book()
-elif menu == 'i':
+elif menu == '5':
     view_books()
-elif menu == 'b':
+elif menu == '2':
     check_borrowed()
-elif menu == 'd':
+elif menu == '4':
     delete_book()
